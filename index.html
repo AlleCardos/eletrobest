@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Atividade 11</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+
+        <input type="checkbox" id="navbar">
+        <input type="checkbox" id="profile">
+        <input type="checkbox" id="buy">
+        
+        <div class="header-menu">
+            <div class="header-menu-logo">
+                <a href="index.html"><h1>Eletro<span>Best</span></h1></a>
+                <label class="header-menu-navbar" for="navbar">
+                    <ion-icon class="menu-navbar-icon" name="caret-down-outline"></ion-icon>
+                </label>
+            </div>
+            <div class="header-menu-search">
+                <form>
+                    <ion-icon class="menu-search-icon" name="search-outline"></ion-icon>
+                    <input type="search" placeholder="Buscar...">
+                </form>
+            </div>
+            <div class="header-menu-icons">
+                <div class="header-menu-buy">
+                    <div>
+                    <label for="buy">
+                        <ion-icon class="menu-buy-icon" name="cart-outline"></ion-icon>
+                    </label>
+                    </div>
+                    <div class="menu-buy">
+                        <ul>
+                            <li><a href="#">Carrinho</a></li>
+                            <li><a href="#">Finalizar Compra</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-menu-profile">
+                    <div>
+                        <label for="profile">
+                            <ion-icon class="menu-profile-icon" name="person-outline"></ion-icon>
+                        </label>
+                    </div>
+                    <div class="menu-profile-options">
+                        <ul>
+                            <li><a href="#">Conta</a></li>
+                            <li><a href="#">Pedidos</a></li>
+                            <li><a href="#">Ajuda</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header-menu-nav">
+            <ul>
+                <li>
+                    <a href="#home">Inicio</a>
+                </li>
+                <li>
+                    <a href="#products">Em destaque</a>
+                </li>
+                <li>
+                    <a href="#offer">Ofertas</a>
+                </li>
+                <li>
+                    <a href="#">Sala</a>
+                </li>
+                <li>
+                    <a href="#">Cozinha</a>
+                </li>
+                <li>
+                    <a href="#">Quarto</a>
+                </li>
+                <li>
+                    <a href="#">Área Externa</a>
+                </li>
+                <li>
+                    <a href="#">EletroPortáteis</a>
+                </li>
+                <li>
+                    <a href="#">Nosso app</a>
+                </li>
+                <li>
+                    <a href="#">Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-home" id="home">
+        <div class="container">
+            <div class="container-home">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cards" id="offer">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+        <input type="radio" name="slider" id="item-5">
+        <div class="container">
+            <div class="title">
+                <h2>OFERTAS</h2>
+            </div>
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    
+                </label>
+                    
+                <label class="card" for="item-2" id="song-2">
+                    
+                </label>
+
+                <label class="card" for="item-3" id="song-3">
+                    
+                </label>
+
+                <label class="card" for="item-4" id="song-4">
+                    
+                </label>
+
+                <label class="card" for="item-5" id="song-5">
+                    
+                </label>
+                    
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="title">
+            <h2>Mais Vendidos</h2>
+        </div>
+        <div class="product">
+            <div class="product-img">
+                <img src="./imgs/geladeira-1.jpg" alt="">
+            </div>
+            <div class="product-desc">
+                <p class="product-name">Geladeira Brastemp Frost Free 375 litros cor inox - BRM45HK</p>
+                <p class="product-oldprice"><s> R$ 3.694,00 </s><span class="product-descont">16% DESCONTO</span></p>
+                <p class="product-price">R$ 2.944,05 <span class="product-now">à vista - 5% OFF</span></p>
+            </div>
+            <div class="product-btn">
+                <button><a href="#">Adicionar ao Carrinho</a></button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-img">
+                <img src="./imgs/iphone.png" alt="">
+            </div>
+            <div class="product-desc">
+                <p class="product-name"> iPhone 13 Pro 512GB</p>
+                <p class="product-oldprice"><s>R$13.499,00</s></p>
+                <p class="product-price">R$ 12.149,10<span class="product-now">à vista - 10% OFF</span></p>
+            </div>
+            <div class="product-btn">
+                <button><a href="#">Adicionar ao Carrinho</a></button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-img">
+                <img src="./imgs/tv.jpg" alt="">
+            </div>
+            <div class="product-desc">
+                <p class="product-name">Smart TV 32” HD LED TCL S615 VA 60Hz - Android Wi-Fi e Bluetooth Google Assistente 2 HDMI</p>
+                <p class="product-oldprice"><s>R$ 1.899,00</s><span class="product-descont">35% DESCONTO</span></p>
+                <p class="product-price">R$ 1.249,00<span class="product-now">à vista - 5% CASHBACK</span></p>
+            </div>
+            <div class="product-btn">
+                <button><a href="#">Adicionar ao Carrinho</a></button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-img">
+                <img src="./imgs/airfry.jpg" alt="">
+            </div>
+            <div class="product-desc">
+                <p class="product-name">Fritadeira Elétrica Sem Óleo/Air Fryer Ultra - AF-10 Preta e Prata 2L com Timer</p>
+                <p class="product-oldprice"><s> R$ 399,00 </s><span class="product-descont">3% DESCONTO</span></p>
+                <p class="product-price">R$ 387,03 <span class="product-now">à vista - 1% CASHBACK</span></p>
+            </div>
+            <div class="product-btn">
+                <button><a href="#">Adicionar ao Carrinho</a></button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-img">
+                <img src="./imgs/guardaroupa.jpg" alt="">
+            </div>
+            <div class="product-desc">
+                <p class="product-name">Guarda-Roupa Casal 100% MDF 3 portas de Correr 1 Porta Espelho Branco Vitoria</p>
+                <p class="product-oldprice"><s>R$ 5.435,42 </s><span class="product-descont">10% DESCONTO</span></p>
+                <p class="product-price">R$ 2.776,81<span class="product-now">à vista</span></p>
+            </div>
+            <div class="product-btn">
+                <button><a href="#">Adicionar ao Carrinho</a></button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-img">
+                <img src="./imgs/cooktop.jpg" alt="">
+            </div>
+            <div class="product-desc">
+                <p class="product-name">Cooktop 5 Bocas Itatiaia 3700000018 à Gás - Elétrico Acendimento Automático</p>
+                <p class="product-oldprice"><s>R$ 699,90</s><span class="product-descont">7% DESCONTO</span></p>
+                <p class="product-price">R$ 373,92<span class="product-now">à vista - 5% OFF</span></p>
+            </div>
+            <div class="product-btn">
+                <button><a href="#">Adicionar ao Carrinho</a></button>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p> by Allexandre Cardoso, Bruna Ferreira, Fabio Lima, Maria Eduarda e Raysa Camargos &copy; SENAI </p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

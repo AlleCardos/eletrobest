@@ -1,0 +1,137 @@
+@keyframes focus {
+    0% {
+        top: 0%;
+    }
+
+    50% {
+        top: -2%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+.section-cards {
+    display: flex;
+}
+
+.section-cards .title {
+    text-align: center;
+    height: 60px;
+    width: 70%;
+    border-bottom: 3px #fff solid;
+    margin: 5% 0;
+}
+
+.section-cards h2 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.section-cards .container {
+    background: linear-gradient(to bottom, #000, #E24D08);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-cards .container .cards {
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.section-cards .container .cards .card {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s;
+    box-shadow: 3px 3px 4px #000;
+}
+
+.card:hover {
+    animation: focus 0.4s alternate;
+    animation-iteration-count: 1;
+}
+
+.section-cards input[type="radio"] {
+    display: none;
+}
+
+#song-1 {
+    background-image: url(../imgs/offer-1.jpeg);
+    background-size: cover;
+}
+
+#song-2 {
+    background-image: url(../imgs/offer-2.jpeg);
+    background-size: cover;
+}
+
+#song-3 {
+    background-image: url(../imgs/offer-3.jpeg);
+    background-size: cover;
+}
+
+#song-4 {
+    background-image: url(../imgs/offer-4.jpeg);
+    background-size: cover;
+}
+
+#song-5 {
+    background-image: url(../imgs/offer-5.jpeg);
+    background-size: cover;
+}
+
+#item-1:checked~.container .cards #song-1,
+#item-2:checked~.container .cards #song-2,
+#item-3:checked~.container .cards #song-3,
+#item-4:checked~.container .cards #song-4,
+#item-5:checked~.container .cards #song-5 {
+    transform: translate(-0px) scale(1);
+    z-index: 2;
+}
+
+#item-1:checked~.container .cards #song-2,
+#item-2:checked~.container .cards #song-3,
+#item-3:checked~.container .cards #song-4,
+#item-4:checked~.container .cards #song-5,
+#item-5:checked~.container .cards #song-1 {
+    transform: translate(80%) scale(0.9);
+    z-index: 1;
+}
+
+#item-1:checked~.container .cards #song-5,
+#item-2:checked~.container .cards #song-1,
+#item-3:checked~.container .cards #song-2,
+#item-4:checked~.container .cards #song-3,
+#item-5:checked~.container .cards #song-4 {
+    transform: translate(-80%) scale(0.9);
+    z-index: 1;
+}
+
+#item-1:checked~.container .cards #song-3,
+#item-2:checked~.container .cards #song-4,
+#item-3:checked~.container .cards #song-5,
+#item-4:checked~.container .cards #song-1,
+#item-5:checked~.container .cards #song-2 {
+    transform: translate(160%) scale(0.8);
+    z-index: 0;
+}
+
+#item-1:checked~.container .cards #song-4,
+#item-2:checked~.container .cards #song-5,
+#item-3:checked~.container .cards #song-1,
+#item-4:checked~.container .cards #song-2,
+#item-5:checked~.container .cards #song-3 {
+    transform: translate(-160%) scale(0.8);
+    z-index: 0;
+}
