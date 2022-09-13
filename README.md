@@ -1,6 +1,6 @@
 > Status: Finished ✅
 
-> ⚠️ Alert: No Responsive
+> Alert: No Responsive ⚠️ 
 
 ## 📝 About
 
